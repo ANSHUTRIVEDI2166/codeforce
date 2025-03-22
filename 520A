@@ -1,0 +1,14 @@
+def solve(s):
+    seen = [False] * 26
+    for c in s.lower():
+        if 'a' <= c <= 'z':
+            seen[ord(c) - ord('a')] = True
+    return all(seen)
+
+n = int(input())
+s = input()
+
+if solve(s):
+    print("YES")
+else:
+    print("NO")
