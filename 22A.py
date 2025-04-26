@@ -1,8 +1,5 @@
 t = int(input())
-array = []
-
-for i in range(t):
-    array.append(int(input()))
+array = list(map(int, input().split()))
 
 s = list(set(array))
 s.sort()
