@@ -3,7 +3,7 @@ def solve(n, a, b, c, d, e, intervals):
 
     for i in range(n):
         x, y = intervals[i]
-        p += (y - x) * b
+        p += (y - x) * a
 
         if i < n - 1:
             z = intervals[i + 1][0] - y
